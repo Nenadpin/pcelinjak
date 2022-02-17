@@ -1,15 +1,16 @@
-# "React JS - Learn React Router with a Beginners Project"
+U sklopu react-router tutorijala, uradjen program za evidenciju pcelinjaka
 
-✅ [Check out my YouTube Channel with all of my tutorials](https://www.youtube.com/DaveGrayTeachesCode).
+Jednostavan za rad, koristi localstorage kao skladiste za evidenciju kosnica
 
-**Description:**
+Svaka kosnica se definise rednim brojem (prvi sledeci) i pri
+definisanju nove kosnice(pocetak rada), pozeljno je uneti kao
+opis koliko nastavaka ima, koliko legla (eventualno boje nastavaka)
 
-This repository shares the code applied during the Youtube tutorial. The tutorial is part of a [Learn React Playlist](https://www.youtube.com/playlist?list=PL0Zuz27SZ-6PrE9srvEn8nbhOOyxnWXfp) on my channel.  
+Istorija pregleda svake kosnice je u "reverse" formatu
+sto znaci da su prvi prikazani poslednji pregledi.
 
-[YouTube Tutorial](https://youtu.be/Cv_JhlKUpto) for this repository.
-
-I suggest completing my [8 hour JavaScript course tutorial video](https://youtu.be/EfAl9bwzVZk) if you are new to Javascript.
-
-### Academic Honesty
-
-**DO NOT COPY FOR AN ASSIGNMENT** - Avoid plagiargism and adhere to the spirit of this [Academic Honesty Policy](https://www.freecodecamp.org/news/academic-honesty-policy/).
+Sta je jos bilo moguce uraditi? Kosnica se ucitava unosom rednog broja.
+Ideja je bila da postoji graficki prikaz rasporeda kosnica u
+pcelinjaku pa da se klikom na pojedinacnu ikonu kosnice dobije njena
+istorija pregleda. Jednostavno je izvesti tako nesto ali smatram da je
+nepotrebni "show-off", i posebno komplikovan kod velikih pcelinjaka.
