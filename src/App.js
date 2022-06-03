@@ -12,12 +12,19 @@ import { format } from "date-fns";
 
 function App() {
   const [hive, setHive] = useState("");
+  const [hiveCount, setHiveCount] = useState(0);
   const [pregledi, setPregledi] = useState([]);
   const [search, setSearch] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [pregledTitle, setPregledTitle] = useState("");
   const [pregledBody, setPregledBody] = useState("");
   const history = useHistory();
+
+  useEffect(() => {
+    if (JSON.parse(localStorage.getItem("hiveCount"))) {
+      setHiveCount(JSON.parse(localStorage.getItem("hiveCount")));
+    } else setHiveCount(0);
+  }, []);
 
   useEffect(() => {
     const filteredResults = pregledi.filter(
@@ -48,23 +55,31 @@ function App() {
   };
 
   const handleNewSubmit = (e) => {
-    e.preventDefault();
-    const newHiveNo = localStorage.length + 1;
-    const id = 1;
-    const datetime = format(new Date(), "MMMM dd, yyyy pp");
-    let allNew = [];
-    const newHive = {
-      id,
-      title: pregledTitle,
-      datetime,
-      body: pregledBody,
-    };
-    allNew[0] = newHive;
-    setPregledTitle("");
-    setPregledBody("");
-    history.push("/");
-
-    localStorage.setItem(newHiveNo, JSON.stringify(allNew));
+    if (hive) {
+      e.preventDefault();
+      const newHiveNo = hive;
+      const id = 1;
+      const datetime = format(new Date(), "MMMM dd, yyyy pp");
+      let allNew = [];
+      const newHive = {
+        id,
+        title: pregledTitle,
+        datetime,
+        body: pregledBody,
+      };
+      allNew[0] = newHive;
+      setPregledTitle("");
+      setPregledBody("");
+      history.push("/");
+      if (JSON.parse(localStorage.getItem(hive))) {
+        alert("Vec imate kosnicu sa tim brojem!");
+        setHive("");
+        return;
+      }
+      localStorage.setItem(newHiveNo, JSON.stringify(allNew));
+      localStorage.setItem("hiveCount", JSON.stringify(hiveCount + 1));
+      setHiveCount(hiveCount + 1);
+    } else alert("Unesite broj kosnice!");
   };
 
   const handleHive = (h) => {
@@ -76,26 +91,31 @@ function App() {
       setHive("");
     }
   };
-
-  const handleSave = () => {
+  const handleDelete = () => {
     if (hive) {
-      localStorage.setItem(hive, JSON.stringify(pregledi));
-      handleHive("");
+      localStorage.removeItem(hive);
+      localStorage.setItem("hiveCount", JSON.stringify(hiveCount - 1));
+      setHive("");
+      setHiveCount(hiveCount - 1);
     }
   };
 
   return (
     <div className="App">
       <Header
-        title="Evidencija kosnice br: "
+        title="Izbor kosnice:"
         hive={hive}
         handleHive={handleHive}
-        handleSave={handleSave}
+        setHive={setHive}
       />
       <Nav search={search} setSearch={setSearch} />
       <Switch>
         <Route exact path="/">
-          <Home pregledi={searchResults} />
+          {hive ? (
+            <Home pregledi={searchResults} />
+          ) : (
+            <Route path="*" component={Missing} />
+          )}
         </Route>
         <Route exact path="/pregled">
           {hive ? (
@@ -111,7 +131,11 @@ function App() {
           )}
         </Route>
         <Route path="/pregled/:id">
-          <PregledPage pregledi={pregledi} />
+          {hive ? (
+            <PregledPage pregledi={pregledi} />
+          ) : (
+            <Route path="*" component={Missing} />
+          )}
         </Route>
         <Route path="/add">
           <Add
@@ -120,11 +144,13 @@ function App() {
             setPregledTitle={setPregledTitle}
             pregledBody={pregledBody}
             setPregledBody={setPregledBody}
+            hive={hive}
+            handleDelete={handleDelete}
           />
         </Route>
         <Route path="*" component={Missing} />
       </Switch>
-      <Footer hive={hive} />
+      <Footer hive={hive} hiveCount={hiveCount} />
     </div>
   );
 }

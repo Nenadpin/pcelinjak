@@ -21,7 +21,7 @@ const Nav = ({ search, setSearch }) => {
           <Link to="/pregled">Pregled</Link>
         </li>
         <li>
-          <Link to="/add">Nova</Link>
+          <Link to="/add">Nova/Brisi</Link>
         </li>
       </ul>
     </nav>

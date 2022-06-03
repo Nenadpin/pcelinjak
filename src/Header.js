@@ -1,4 +1,4 @@
-const Header = ({ title, handleSave, hive, handleHive }) => {
+const Header = ({ title, setHive, hive, handleHive }) => {
   return (
     <header className="Header">
       <h1>{title}</h1>
@@ -6,9 +6,14 @@ const Header = ({ title, handleSave, hive, handleHive }) => {
         placeholder="Broj:"
         className="searchHive"
         autoFocus
+        required
         type="text"
         value={hive}
-        onChange={(e) => handleHive(e.target.value)}
+        onFocus={() => setHive("")}
+        onChange={(e) => setHive(e.target.value)}
+        onKeyDown={(e) => {
+          if (e.key === "Enter") handleHive(hive);
+        }}
       ></input>
     </header>
   );

@@ -1,7 +1,9 @@
-const Footer = ({ hive }) => {
+const Footer = ({ hive, hiveCount }) => {
   return (
     <footer className="Footer">
-      <p>Kosnica br: {hive} od ukupno {localStorage.length}</p>
+      <p>
+        Kosnica br: {hive} od ukupno {hiveCount}
+      </p>
     </footer>
   );
 };
