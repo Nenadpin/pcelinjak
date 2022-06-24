@@ -1,0 +1,508 @@
+{
+  "apiary": [
+    {
+      "no": 331,
+      "details": [
+        {
+          "id": 1,
+          "title": "Roj br 1",
+          "datetime": "June 16, 2022 8:00:59 AM",
+          "body": "6-to ramni db nukleus (kosnica). Ima 2 zatvorena maticnjaka. 2 rama zatvorenog legla (izlazece) i ceo ram meda. Uvucena fioka u podnjacu"
+        },
+        {
+          "id": 2,
+          "title": "2022-06-13",
+          "datetime": "June 21, 2022 3:29:29 PM",
+          "body": "Potvrda"
+        }
+      ],
+      "opis": { "matica": false, "tip": "all" }
+    },
+    {
+      "no": 132,
+      "details": [
+        {
+          "id": 1,
+          "title": "Kombinovana kosnica",
+          "datetime": "June 16, 2022 8:35:03 AM",
+          "body": "Podeljena pomocu MR gde su otresene pcele iz DB plodista u 2 FA nastavka. Nema maticnjaka, prisutno leglo svih stadijuma u plodistu. Sipan sirup."
+        },
+        {
+          "id": 2,
+          "title": "2022-06-13",
+          "datetime": "June 21, 2022 3:34:31 PM",
+          "body": "Potvrda"
+        }
+      ],
+      "opis": { "matica": true, "tip": "all" }
+    },
+    {
+      "no": 158,
+      "details": [
+        {
+          "id": 1,
+          "title": "Kombinovana kosnica",
+          "datetime": "June 16, 2022 8:44:47 AM",
+          "body": "Prejaka kosnica. Podeljena na 9 DB ramova i 2 FA nastavka pomocu MR. Potrebno je izvuci neke ramove DB iz plodista sa pcelama."
+        },
+        {
+          "id": 2,
+          "title": "2022-06-13",
+          "datetime": "June 21, 2022 3:35:16 PM",
+          "body": "Potvrda stanja"
+        }
+      ],
+      "opis": { "matica": true, "tip": "all" }
+    },
+    {
+      "no": 324,
+      "details": [
+        {
+          "id": 1,
+          "title": "Kombinovana",
+          "datetime": "June 16, 2022 8:26:26 AM",
+          "body": "Vec je izvadjen roj. Ima dosta pcela. Nema maticnjaka. Prisutno otvoreno leglo.  Podeljena MR na donji deo DB iz koga su stresane pcele u 2 FA nastavka iznad MR. Sipan sirup."
+        },
+        {
+          "id": 2,
+          "title": "2022-06-13",
+          "datetime": "June 21, 2022 3:35:56 PM",
+          "body": "Potvrda stanja"
+        }
+      ],
+      "opis": { "matica": true, "tip": "all" }
+    },
+    {
+      "no": 1,
+      "details": [
+        {
+          "id": 1,
+          "title": "FA kosnica",
+          "datetime": "June 16, 2022 8:10:23 AM",
+          "body": "Prejaka. Bila na 4 nastavka (3 nastavka sa leglom i jedan izvrcan nastavak. Izvrsena rotacija 2 i 3 nastavka pa podeljena na FA kosnicu i FA roj.nAgresivna (prejaka ili lose vreme tokom pregleda). Na svom mestu je ostala FA sa 2 nastavka legla i dodat nastavak SO."
+        },
+        {
+          "id": 2,
+          "title": "2022-06-13",
+          "datetime": "June 21, 2022 3:36:27 PM",
+          "body": "Potvrda stanja"
+        }
+      ],
+      "opis": { "matica": false, "tip": "fa" }
+    },
+    {
+      "no": 190,
+      "details": [
+        {
+          "id": 1,
+          "title": "DB kosnica",
+          "datetime": "June 16, 2022 8:46:43 AM",
+          "body": "Odlicna DB kosnica. Dosta agresivna. U plodistu ima 7 DB ramova i 2 mala. Na njoj su 2 polunastavka jer ima dosta pcela."
+        },
+        {
+          "id": 2,
+          "title": "2022-06-13",
+          "datetime": "June 21, 2022 3:37:06 PM",
+          "body": "Potvrda stanja."
+        }
+      ],
+      "opis": { "matica": true, "tip": "db" }
+    },
+    {
+      "no": 208,
+      "details": [
+        {
+          "id": 1,
+          "title": "Roj br 3",
+          "datetime": "June 16, 2022 8:20:15 AM",
+          "body": "5-toramni DB nukleus (kosnica). 2 maticnjaka, 2 rama izlazeceg legla i 3 rama sa medom. Stavljena fioka u podnjaci i sipan sirup"
+        },
+        {
+          "id": 2,
+          "title": "2022-06-13",
+          "datetime": "June 21, 2022 3:37:32 PM",
+          "body": "Potvrda stanja"
+        }
+      ],
+      "opis": { "matica": false, "tip": "all" }
+    },
+    {
+      "no": 299,
+      "details": [
+        {
+          "id": 1,
+          "title": "Kombinovana kosnica",
+          "datetime": "June 16, 2022 8:41:16 AM",
+          "body": "Izvadjen roj od 5 DB ramova (4 leglo i 1 med). Ostala 4 DB rama sa leglom i medom sa koga su otresene pcele. Stavljena MR i 2 nastavka FA iznad sa pcelama. Proveriti gde je otisla matica."
+        },
+        {
+          "id": 2,
+          "title": "2022-06-13",
+          "datetime": "June 21, 2022 3:38:41 PM",
+          "body": "Proveri da li ima maticu"
+        }
+      ],
+      "opis": { "matica": false, "tip": "all" }
+    },
+    {
+      "no": 315,
+      "details": [
+        {
+          "id": 1,
+          "title": "DB kosnica",
+          "datetime": "June 16, 2022 8:29:40 AM",
+          "body": "Dobra DB kosnica. 9 rama (8+1 mali). 4 rama ZL. Prisutno otvoreno leglo. Najmirnija kosnica. Na plodistu je polunastavak sa izvrcanimn ramovima."
+        },
+        {
+          "id": 2,
+          "title": "2022-06-13",
+          "datetime": "June 21, 2022 3:39:07 PM",
+          "body": "Potvrda stanja"
+        }
+      ],
+      "opis": { "matica": true, "tip": "db" }
+    },
+    {
+      "no": 314,
+      "details": [
+        {
+          "id": 1,
+          "title": "DB kosnica",
+          "datetime": "June 16, 2022 8:31:56 AM",
+          "body": "Odlicna DB kosnica. 9 ramova DB formata sa dosta meda i 4 rama ZL. Polunastavak sa izvrcanim ramovima. Sipan sirup."
+        },
+        {
+          "id": 2,
+          "title": "2022-06-13",
+          "datetime": "June 21, 2022 3:39:36 PM",
+          "body": "Odlicna. Potvrda stanja"
+        }
+      ],
+      "opis": { "matica": true, "tip": "db" }
+    },
+    {
+      "no": 257,
+      "details": [
+        {
+          "id": 1,
+          "title": "Roj br 2",
+          "datetime": "June 16, 2022 8:14:07 AM",
+          "body": "5-toramni DB nukleus (kosnica). 2 zatvorena maticnjaka, 2 rama legla izlazeceg i 1 meda. Najslabija i napadnuta od drugih kosnica. Premestena na drugo mesto u pcelinjaku a na njeno mesto stavljeni prazni nastavci sa losim sacem. Zatvorena fioka podnjace i sipan sirup."
+        },
+        {
+          "id": 2,
+          "title": "2022-06-13",
+          "datetime": "June 21, 2022 3:40:29 PM",
+          "body": "ROJ DB."
+        }
+      ],
+      "opis": { "matica": false, "tip": "all" }
+    },
+    {
+      "no": 166,
+      "details": [
+        {
+          "id": 1,
+          "title": "Kombinovana kosnica",
+          "datetime": "June 16, 2022 8:36:53 AM",
+          "body": "Podeljena MR izmedju plodista (DB) iz koga su stresane pcele i 2 FA nastavka (jedan SO i drugi vrcani ramovi). Sipan sirup."
+        },
+        {
+          "id": 2,
+          "title": "2022-06-14",
+          "datetime": "June 21, 2022 3:41:11 PM",
+          "body": "Potvrda stanja"
+        }
+      ],
+      "opis": { "matica": true, "tip": "all" }
+    },
+    {
+      "no": 321,
+      "details": [
+        {
+          "id": 1,
+          "title": "Roj na 5 DB ramova",
+          "datetime": "June 20, 2022 9:46:46 AM",
+          "body": "Ima puno maticnjaka i dosta pcela."
+        },
+        {
+          "id": 2,
+          "title": "2022-06-14",
+          "datetime": "June 21, 2022 3:41:45 PM",
+          "body": "Potvrda stanja. Proveriti"
+        }
+      ],
+      "opis": { "matica": false, "tip": "all" }
+    },
+    {
+      "no": 364,
+      "details": [
+        {
+          "id": 1,
+          "title": "FA kosnica",
+          "datetime": "June 20, 2022 9:56:07 AM",
+          "body": "Ostala matica. Uocene larve i jaja. Mirna. Na 2 nastavka (jedan sa leglom)."
+        },
+        {
+          "id": 2,
+          "title": "2022-06-17",
+          "datetime": "June 21, 2022 3:42:27 PM",
+          "body": "FA nukleus, potvrda stanja"
+        }
+      ],
+      "opis": { "matica": true, "tip": "fa" }
+    },
+    {
+      "no": 2,
+      "details": [
+        {
+          "id": 1,
+          "title": "Izdvojena kosnica",
+          "datetime": "June 20, 2022 9:58:24 AM",
+          "body": "Iz nekih odvajanja ostala matica. Ima otvorenog legla, nema maticnjaka. 4 rama ZL od ukupno 5 DB ramova. Potrebno dodavati ramove. Mirna."
+        },
+        {
+          "id": 2,
+          "title": "2022-06-18",
+          "datetime": "June 21, 2022 3:43:17 PM",
+          "body": "DB nukleus u FA. dodavati ramove"
+        }
+      ],
+      "opis": { "matica": true, "tip": "all" }
+    },
+    {
+      "no": 240,
+      "details": [
+        {
+          "id": 1,
+          "title": "Kombinovana kosnica",
+          "datetime": "June 20, 2022 9:59:30 AM",
+          "body": "Prejaka. Podeljena pomocu MR. U plodistu 9 DB ramova i stresene pcele u gornja 2 FA nastavka."
+        },
+        {
+          "id": 2,
+          "title": "2022-06-18",
+          "datetime": "June 21, 2022 3:43:41 PM",
+          "body": "Potvrda stanja."
+        }
+      ],
+      "opis": { "matica": true, "tip": "all" }
+    },
+    {
+      "no": 281,
+      "details": [
+        {
+          "id": 1,
+          "title": "DB kosnica",
+          "datetime": "June 20, 2022 10:00:50 AM",
+          "body": "Odlicna DB kosnica. Prisutno OL, ima puno pcela i ostavljena sa 2 polunastavka. Ima 9 DB ramova u plodistu."
+        },
+        {
+          "id": 2,
+          "title": "2022-06-18",
+          "datetime": "June 21, 2022 3:44:06 PM",
+          "body": "Potvrda stanja."
+        }
+      ],
+      "opis": { "matica": true, "tip": "db" }
+    },
+    {
+      "no": 356,
+      "details": [
+        {
+          "id": 1,
+          "title": "FA kosnica",
+          "datetime": "June 20, 2022 10:02:30 AM",
+          "body": "Idealna FA na 4 nastavka. 3-ci nastavak je bio SO koje su izvukle. Rotiran 2 i 3 pa stavljena MR za podelu."
+        },
+        {
+          "id": 2,
+          "title": "2022-06-18",
+          "datetime": "June 21, 2022 3:44:37 PM",
+          "body": "Potvrda. Spremna za podelu."
+        }
+      ],
+      "opis": { "matica": true, "tip": "fa" }
+    },
+    {
+      "no": 349,
+      "details": [
+        {
+          "id": 1,
+          "title": "DB kosnica bezmatak",
+          "datetime": "June 20, 2022 10:07:04 AM",
+          "body": "Imala 7 DB + 1 mali ram. Nema otvorenog legla. Ima 1 polunastavak. Dodat kao 8-mi DB ram neki sa otvorenim leglom. Mirna kosnica ali treba proveriti."
+        },
+        {
+          "id": 2,
+          "title": "2022-06-18",
+          "datetime": "June 21, 2022 3:45:11 PM",
+          "body": "Potvrda stanja. Proveriti maticnjake."
+        }
+      ],
+      "opis": { "matica": false, "tip": "db" }
+    },
+    {
+      "no": 273,
+      "details": [
+        {
+          "id": 1,
+          "title": "Bezmatak",
+          "datetime": "June 20, 2022 10:10:39 AM",
+          "body": "Imala 5 DB ramova bez OL.Dodat jedan DB ram sa leglom. Proveriti."
+        },
+        {
+          "id": 2,
+          "title": "2022-06-18",
+          "datetime": "June 21, 2022 3:45:39 PM",
+          "body": "Potvrda stanja. Proveriti maticnjake."
+        }
+      ],
+      "opis": { "matica": false, "tip": "all" }
+    },
+    {
+      "no": 323,
+      "details": [
+        {
+          "id": 1,
+          "title": "Slaba kosnica",
+          "datetime": "June 20, 2022 10:14:28 AM",
+          "body": "Samo 2 DB rama sa leglom. Ima puno meda. Jedan ram uzet za 273 i podeljena MR. Ideja je smanjiti je na malu FA uz proveru gde je matica."
+        },
+        {
+          "id": 2,
+          "title": "2022-06-18",
+          "datetime": "June 21, 2022 3:46:07 PM",
+          "body": "Slaba. Proveriti."
+        }
+      ],
+      "opis": { "matica": true, "tip": "all" }
+    },
+    {
+      "no": 307,
+      "details": [
+        {
+          "id": 1,
+          "title": "Kombinovana kosnica",
+          "datetime": "June 20, 2022 10:18:23 AM",
+          "body": "6 DB rama (uzet sedmi za 349) i 1 polunastavak. Ima 3 rama ZL i prisutno je OL. Ima dosta meda."
+        },
+        {
+          "id": 2,
+          "title": "2022-06-18",
+          "datetime": "June 21, 2022 3:46:32 PM",
+          "body": "OK kosnica. srediti"
+        }
+      ],
+      "opis": { "matica": true, "tip": "all" }
+    },
+    {
+      "no": 232,
+      "details": [
+        {
+          "id": 1,
+          "title": "Kombinovana kosnica",
+          "datetime": "June 20, 2022 10:20:24 AM",
+          "body": "Podeljena na donji deo sa 5DB ramova i FA. Ima 3 rama ZL."
+        },
+        {
+          "id": 2,
+          "title": "2022-06-18",
+          "datetime": "June 21, 2022 3:46:54 PM",
+          "body": "Potvrda stanja."
+        }
+      ],
+      "opis": { "matica": true, "tip": "all" }
+    },
+    {
+      "no": 265,
+      "details": [
+        {
+          "id": 1,
+          "title": "DB kosnica",
+          "datetime": "June 20, 2022 3:22:28 PM",
+          "body": "Puna DB kosnica sa 8DB rama (6 rama ZL) i po 1 zaperak sa medom sa strane. Gore 2 polunastavka"
+        },
+        {
+          "id": 2,
+          "title": "2022-06-18",
+          "datetime": "June 21, 2022 3:47:23 PM",
+          "body": "Potvrda stanja. zaperci sa medom."
+        }
+      ],
+      "opis": { "matica": true, "tip": "db" }
+    },
+    {
+      "no": 3,
+      "details": [
+        {
+          "id": 1,
+          "title": "2022-06-18",
+          "datetime": "June 20, 2022 5:59:55 PM",
+          "body": "Fa kosnica iz Leskovca. Na 3 nastavka gde je poslednji nastavak sa 7-8 ramova izvrcanog meda. Proveriti."
+        },
+        {
+          "id": 2,
+          "title": "2022-06-18",
+          "datetime": "June 21, 2022 3:47:50 PM",
+          "body": "Potrebna kontrola."
+        }
+      ],
+      "opis": { "matica": true, "tip": "fa" }
+    },
+    {
+      "no": 4,
+      "details": [
+        {
+          "id": 1,
+          "title": "2022-06-18",
+          "datetime": "June 20, 2022 6:00:12 PM",
+          "body": "Fa kosnica iz Leskovca. Na 3 nastavka gde je poslednji nastavak sa 7-8 ramova izvrcanog meda. Proveriti."
+        },
+        {
+          "id": 2,
+          "title": "2022-06-18",
+          "datetime": "June 21, 2022 3:48:10 PM",
+          "body": "Potrebna kontrola."
+        }
+      ],
+      "opis": { "matica": true, "tip": "fa" }
+    },
+    {
+      "no": 5,
+      "details": [
+        {
+          "id": 1,
+          "title": "2022-06-18",
+          "datetime": "June 20, 2022 6:00:26 PM",
+          "body": "Fa kosnica iz Leskovca. Na 3 nastavka gde je poslednji nastavak sa 7-8 ramova izvrcanog meda. Proveriti."
+        },
+        {
+          "id": 2,
+          "title": "2022-06-18",
+          "datetime": "June 21, 2022 3:48:31 PM",
+          "body": "Potrebna kontrola."
+        }
+      ],
+      "opis": { "matica": true, "tip": "fa" }
+    },
+    {
+      "no": 6,
+      "details": [
+        {
+          "id": 1,
+          "title": "2022-06-18",
+          "datetime": "June 20, 2022 6:00:37 PM",
+          "body": "Fa kosnica iz Leskovca. Na 3 nastavka gde je poslednji nastavak sa 7-8 ramova izvrcanog meda. Proveriti."
+        },
+        {
+          "id": 2,
+          "title": "2022-06-18",
+          "datetime": "June 21, 2022 3:48:43 PM",
+          "body": "Potrebna kontrola."
+        }
+      ],
+      "opis": { "matica": true, "tip": "fa" }
+    }
+  ]
+}

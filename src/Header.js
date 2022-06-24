@@ -10,7 +10,10 @@ const Header = ({ title, setHive, hive, handleHive }) => {
         type="text"
         value={hive}
         onFocus={() => setHive("")}
-        onChange={(e) => setHive(e.target.value)}
+        onChange={(e) => {
+          setHive(e.target.value);
+          handleHive(e.target.value);
+        }}
         onKeyDown={(e) => {
           if (e.key === "Enter") handleHive(hive);
         }}

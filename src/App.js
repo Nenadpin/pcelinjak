@@ -13,18 +13,25 @@ import { format } from "date-fns";
 function App() {
   const [hive, setHive] = useState("");
   const [hiveCount, setHiveCount] = useState(0);
+  const [apiary, setApiary] = useState([]);
+  const [i, setI] = useState();
   const [pregledi, setPregledi] = useState([]);
   const [search, setSearch] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   const [pregledTitle, setPregledTitle] = useState("");
   const [pregledBody, setPregledBody] = useState("");
+  const [opis, setOpis] = useState({
+    matica: true,
+    tip: "db",
+  });
   const history = useHistory();
 
   useEffect(() => {
-    if (JSON.parse(localStorage.getItem("hiveCount"))) {
-      setHiveCount(JSON.parse(localStorage.getItem("hiveCount")));
+    if (JSON.parse(localStorage.getItem("apiary"))) {
+      setApiary(JSON.parse(localStorage.getItem("apiary")));
+      setHiveCount(apiary.length);
     } else setHiveCount(0);
-  }, []);
+  }, [apiary.length]);
 
   useEffect(() => {
     const filteredResults = pregledi.filter(
@@ -48,7 +55,14 @@ function App() {
     };
     const allPregledi = [...pregledi, noviPregled];
     setPregledi(allPregledi);
-    localStorage.setItem(hive, JSON.stringify(allPregledi));
+    apiary[i].details.push(noviPregled);
+    if (apiary[i].opis) {
+      apiary[i].opis.matica = opis.matica;
+      apiary[i].opis.tip = opis.tip;
+    } else {
+      apiary[i] = { ...apiary[i], opis };
+    }
+    localStorage.setItem("apiary", JSON.stringify(apiary));
     setPregledTitle("");
     setPregledBody("");
     history.push("/");
@@ -57,7 +71,6 @@ function App() {
   const handleNewSubmit = (e) => {
     if (hive) {
       e.preventDefault();
-      const newHiveNo = hive;
       const id = 1;
       const datetime = format(new Date(), "MMMM dd, yyyy pp");
       let allNew = [];
@@ -71,30 +84,37 @@ function App() {
       setPregledTitle("");
       setPregledBody("");
       history.push("/");
-      if (JSON.parse(localStorage.getItem(hive))) {
+      if (apiary.findIndex((x) => x.no.toString() === hive) !== -1) {
         alert("Vec imate kosnicu sa tim brojem!");
         setHive("");
         return;
       }
-      localStorage.setItem(newHiveNo, JSON.stringify(allNew));
-      localStorage.setItem("hiveCount", JSON.stringify(hiveCount + 1));
-      setHiveCount(hiveCount + 1);
+      apiary.push({
+        no: Number(hive),
+        details: allNew,
+        opis: opis,
+      });
+      localStorage.setItem("apiary", JSON.stringify(apiary));
     } else alert("Unesite broj kosnice!");
   };
 
   const handleHive = (h) => {
-    if (JSON.parse(localStorage.getItem(h))) {
-      setPregledi(JSON.parse(localStorage.getItem(h)));
+    let index = apiary.findIndex((x) => x.no.toString() === h.toString());
+    if (index !== -1) {
+      setPregledi(apiary[index].details);
+      if (apiary[index].opis) setOpis(apiary[index].opis);
       setHive(h);
+      setI(index);
     } else {
       setPregledi([]);
-      setHive("");
+      // setOpis({});
     }
   };
+
   const handleDelete = () => {
     if (hive) {
-      localStorage.removeItem(hive);
-      localStorage.setItem("hiveCount", JSON.stringify(hiveCount - 1));
+      apiary.splice(i, 1);
+      localStorage.setItem("apiary", JSON.stringify(apiary));
       setHive("");
       setHiveCount(hiveCount - 1);
     }
@@ -112,9 +132,13 @@ function App() {
       <Switch>
         <Route exact path="/">
           {hive ? (
-            <Home pregledi={searchResults} />
+            <Home pregledi={searchResults} handleDelete={handleDelete} />
           ) : (
-            <Route path="*" component={Missing} />
+            <Missing
+              apiary={apiary}
+              setHive={setHive}
+              handleHive={handleHive}
+            />
           )}
         </Route>
         <Route exact path="/pregled">
@@ -125,16 +149,26 @@ function App() {
               setPregledTitle={setPregledTitle}
               pregledBody={pregledBody}
               setPregledBody={setPregledBody}
+              opis={opis}
+              setOpis={setOpis}
             />
           ) : (
-            <Route path="*" component={Missing} />
+            <Missing
+              apiary={apiary}
+              setHive={setHive}
+              handleHive={handleHive}
+            />
           )}
         </Route>
         <Route path="/pregled/:id">
           {hive ? (
             <PregledPage pregledi={pregledi} />
           ) : (
-            <Route path="*" component={Missing} />
+            <Missing
+              apiary={apiary}
+              setHive={setHive}
+              handleHive={handleHive}
+            />
           )}
         </Route>
         <Route path="/add">
@@ -145,10 +179,13 @@ function App() {
             pregledBody={pregledBody}
             setPregledBody={setPregledBody}
             hive={hive}
-            handleDelete={handleDelete}
+            opis={opis}
+            setOpis={setOpis}
           />
         </Route>
-        <Route path="*" component={Missing} />
+        <Route path="*">
+          <Missing apiary={apiary} setHive={setHive} handleHive={handleHive} />
+        </Route>
       </Switch>
       <Footer hive={hive} hiveCount={hiveCount} />
     </div>
