@@ -14,3 +14,7 @@ Ideja je bila da postoji graficki prikaz rasporeda kosnica u
 pcelinjaku pa da se klikom na pojedinacnu ikonu kosnice dobije njena
 istorija pregleda. Jednostavno je izvesti tako nesto ali smatram da je
 nepotrebni "show-off", i posebno komplikovan kod velikih pcelinjaka.
+
+Dodato je i pocetno stanje mog pcelinjaka kao data.json fajl koji se
+moze ucitati, kosnice su predstavljene <button> elementima i 
+moze se posetiti na "pcelinjak.netlify.app"
